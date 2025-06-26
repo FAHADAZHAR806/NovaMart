@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import Navbar from "./components/Navbar";
-import { CartProvider } from "@/context/cartcontext"; // ✅ import context
+import { CartProvider } from "@/context/cartcontext";
 
 export const metadata = {
   title: "NovaMart",

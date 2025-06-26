@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react"; // optional: you can use from heroicons instead
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold">
-          <Link href="/home">NovaMart</Link>
+          <Link href="/">NovaMart</Link>
         </h1>
 
         {/* Desktop Menu */}

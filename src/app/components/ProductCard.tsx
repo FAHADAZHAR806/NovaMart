@@ -1,5 +1,8 @@
+"use client";
 import { Product } from "@/types";
 import { Button } from "@/components/ui/button";
+import { useCart } from "@/context/cartcontext";
+
 import Image from "next/image";
 
 interface Props {
@@ -7,6 +10,7 @@ interface Props {
 }
 
 export default function ProductCard({ product }: Props) {
+  const { addToCart } = useCart();
   return (
     <div className="border rounded-lg shadow-sm overflow-hidden bg-white py-4 ">
       <div className="relative w-50 h-40 ">
@@ -24,9 +28,14 @@ export default function ProductCard({ product }: Props) {
           <p>{product.star}</p>
         </div>
         <div className="flex items-center justify-between">
-          <p className="">{product.price}</p>
-          <Button className="" variant="outline">
-            Buy Now
+          <p className="text-gray-700">${product.price.toFixed(2)}</p>
+
+          <Button
+            className=""
+            variant="outline"
+            onClick={() => addToCart(product)}
+          >
+            Add to Cart
           </Button>
         </div>
       </div>
