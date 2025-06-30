@@ -6,7 +6,8 @@ export default function CartPage() {
   const { cartItems } = useCart();
 
   const totalPrice = cartItems.reduce((sum, item) => {
-    return sum + item.price * item.quantity;
+    const quantity = item.quantity || 1; // Fallback if quantity is undefined
+    return sum + item.price * quantity;
   }, 0);
 
   return (
@@ -17,34 +18,47 @@ export default function CartPage() {
         <p className="text-gray-600">Your cart is empty.</p>
       ) : (
         <div className="space-y-4">
-          {cartItems.map((item) => (
-            <div
-              key={item.id}
-              className="flex items-center justify-between border-b pb-4"
-            >
-              <div className="flex items-center gap-4">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={80}
-                  height={80}
-                  className="rounded"
-                />
-                <div>
-                  <h2 className="font-semibold">{item.title}</h2>
-                  <p className="text-sm text-gray-500">
-                    ${item.price.toFixed(2)} x {item.quantity}
-                  </p>
+          {cartItems.map((item) => {
+            const quantity = item.quantity || 1;
+            const itemTotal = item.price * quantity;
+
+            return (
+              <div
+                key={item.id}
+                className="flex items-center justify-between border-b pb-4"
+              >
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={80}
+                    height={80}
+                    className="rounded"
+                  />
+                  <div>
+                    <p>
+                      <strong>Name:</strong> {item.title}
+                    </p>
+                    <p>
+                      <strong>Price:</strong> Rs {item.price}
+                    </p>
+                    <p>
+                      <strong>Quantity:</strong> {quantity}
+                    </p>
+                    <p>
+                      <strong>Total:</strong> Rs {itemTotal}
+                    </p>
+                  </div>
+                </div>
+                <div className="text-right font-semibold text-green-700">
+                  Rs {itemTotal.toFixed(2)}
                 </div>
               </div>
-              <div className="text-right font-semibold">
-                ${(item.price * item.quantity).toFixed(2)}
-              </div>
-            </div>
-          ))}
+            );
+          })}
 
           <div className="text-right text-xl font-bold pt-4 border-t">
-            Total: ${totalPrice.toFixed(2)}
+            <p>Grand Total: Rs {totalPrice.toFixed(2)}</p>
           </div>
         </div>
       )}
