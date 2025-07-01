@@ -23,7 +23,7 @@ export default function Navbar() {
           <Link href="/home">
             <Button variant="outline">Home</Button>
           </Link>
-          <Link href="/products">
+          <Link href="/shop">
             <Button variant="outline">Shop</Button>
           </Link>
           <Link href="/cart">

@@ -2,7 +2,7 @@ import { Product } from "@/types";
 
 export const products: Product[] = [
   {
-    quantity: 2,
+    quantity: 1,
     id: 1,
     title: "Wireless Headphones",
     price: 59.99,
@@ -12,7 +12,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 2,
     title: "Smartwatch Series 5",
     price: 199.99,
@@ -22,7 +22,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 3,
     title: "4K LED Monitor",
     price: 329.99,
@@ -32,7 +32,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 4,
     title: "4K LED Monitor",
     price: 329.99,
@@ -42,7 +42,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 5,
     title: "4K LED Monitor",
     price: 329.99,
@@ -52,7 +52,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 6,
     title: "Wireless Headphones",
     price: 59.99,
@@ -62,7 +62,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 7,
     title: "Smartwatch Series 5",
     price: 199.99,
@@ -72,7 +72,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 8,
     title: "4K LED Monitor",
     price: 329.99,
@@ -82,7 +82,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 9,
     title: "4K LED Monitor",
     price: 329.99,
@@ -92,7 +92,7 @@ export const products: Product[] = [
     star: "⭐⭐⭐⭐",
   },
   {
-    quantity: 2,
+    quantity: 1,
     id: 10,
     title: "4K LED Monitor",
     price: 329.99,
