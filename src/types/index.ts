@@ -8,3 +8,12 @@ export interface Product {
   rating: string;
   star: string;
 }
+
+export interface Items {
+  id: number;
+  offer: string;
+  descrip: string;
+  btntext: string;
+  btntext1: string;
+  image: string;
+}
