@@ -17,3 +17,10 @@ export interface Items {
   btntext1: string;
   image: string;
 }
+export interface Cards {
+  id: number;
+  bgimg: string;
+  btn: string;
+  heading1: string;
+  heading2: string;
+}
