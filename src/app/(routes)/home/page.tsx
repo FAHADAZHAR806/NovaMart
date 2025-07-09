@@ -80,7 +80,7 @@ export default function HomePage() {
         >
           {product.map((item, index) => (
             <SwiperSlide key={index} className="relative   ">
-              <div className="flex justify-between  bg-emerald-100 rounded-4xl p-10 w-[1000px] h-[420px] m-auto items-center">
+              <div className="flex  justify-between  bg-emerald-100 rounded-4xl p-10 w-[1000px] h-[420px] m-auto items-center">
                 <div className=" flex flex-col gap-10 flex-1">
                   <h3 className="text-orange-400 inline font-semibold">
                     {item.offer}
