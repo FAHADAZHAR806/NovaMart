@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {" "}
           {/* ✅ Wrap the entire app */}
           <Navbar />
-          <main className="p-4">{children}</main>
+          <main className="p-4 overflow-x-hidden">{children}</main>
           <Footer />
         </CartProvider>
       </body>

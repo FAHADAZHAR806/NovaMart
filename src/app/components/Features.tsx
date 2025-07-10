@@ -29,7 +29,7 @@ export default function Features() {
 
   return (
     <div className="w-full max-w-[1000px] mx-auto">
-      <div className="flex flex-wrap justify-between gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {card.map((item) => (
           <div
             key={item.id}

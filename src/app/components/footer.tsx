@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-amber-600 text-white font-semibold">
+    <footer className="bg-amber-600 text-white font-semibold">
       {/* Main Footer */}
       <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-10 md:gap-20 mt-10 p-6 md:px-20 md:pt-20 md:pb-10">
         {/* Left Column */}
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Right Column */}
-        <div className="flex flex-col gap-3 flex-1 items-center md:items-end text-sm">
+        <div className="flex flex-col gap-3 flex-1 items-center md:items-center text-sm">
           <h1 className="text-2xl font-bold mb-1">Get in Touch</h1>
           <p>📞 +92 341 5742411</p>
           <p>✉️ fahakiyani28@gmail.com</p>
