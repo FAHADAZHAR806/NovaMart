@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Left Column */}
         <div className="flex flex-col gap-4 flex-1 text-center md:text-left">
           <h1 className="text-2xl font-bold">NovaMart</h1>
-          <p className="text-sm leading-relaxed text-center">
+          <p className="text-sm leading-relaxed text-center md:text-start">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
             natus iste voluptates similique veniam minus fugiat, assumenda
             magnam a at facere. Autem vel quis porro, commodi saepe aut sint

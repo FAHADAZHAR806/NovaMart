@@ -12,7 +12,7 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   const { addToCart } = useCart();
   return (
-    <div className="border rounded-lg shadow-sm overflow-hidden bg-white py-4 ">
+    <div className="border rounded-lg shadow-sm overflow-hidden bg-white py-4  hover:scale-105 transition-transform duration-100">
       <div className="relative w-50 h-40 ">
         <Image
           src={product.image}

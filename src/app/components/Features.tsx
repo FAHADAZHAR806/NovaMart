@@ -6,21 +6,21 @@ export default function Features() {
   const card: Cards[] = [
     {
       id: 1,
-      bgimg: "/images/person-earsbuds.jpg",
+      bgimg: "/images/boy.png",
       btn: "Buy Now",
       heading1: "UnParallel Sound",
       heading2: "Pixel Perfect Lorem ipsum dolor sit amet.",
     },
     {
       id: 2,
-      bgimg: "/images/person-headphones.jpg",
+      bgimg: "/images/dash.png",
       btn: "Buy Now",
       heading1: "UnParallel Sound",
       heading2: "Pixel Perfect Lorem ipsum dolor sit amet.",
     },
     {
       id: 3,
-      bgimg: "/images/person-earsbuds.jpg",
+      bgimg: "/images/girl.png",
       btn: "Buy Now",
       heading1: "UnParallel Sound",
       heading2: "Pixel Perfect Lorem ipsum dolor sit amet.",

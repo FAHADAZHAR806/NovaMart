@@ -76,7 +76,7 @@ export default function HomePage() {
                     <h3 className="text-orange-400 font-semibold">
                       {item.offer}
                     </h3>
-                    <h1 className="font-bold text-2xl text-center md:text-4xl  ">
+                    <h1 className="font-bold text-2xl text-center md:text-start md:text-4xl  ">
                       {item.descrip}
                     </h1>
                     <div className="flex justify-center  gap-4 flex-wrap  ">
@@ -104,7 +104,7 @@ export default function HomePage() {
           </Swiper>
 
           {/* Navigation & Pagination Controls */}
-          <div className="flex justify-between items-center mt-6 gap-4 flex-wrap">
+          <div className="flex justify-between items-center mt-0 gap-4 flex-wrap">
             <div className="swiper-pagination"></div>
             <div className="flex gap-2">
               <Button className="swiper-button-prev bg-primary text-white p-2 md:p-3 rounded-md hover:bg-pink-800">
